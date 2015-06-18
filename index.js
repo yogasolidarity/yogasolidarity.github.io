@@ -93,7 +93,8 @@
        }
      }
 
-     setInterval(updateMenu, 2000);
+     window.addEventListener('scroll', updateMenu);
+    //  setInterval(updateMenu, 2000);
      updateMenu();
    });
 
