@@ -59,9 +59,22 @@ h1 {
 }
 
 #menu li {
+	border-left: 3px solid orange;
+	margin: 5px 0px;
+	padding: 2px 5px;
+	transition: border-left 0.1s;
+}
+
+#menu a.active > li {
+	border-left-width: 8px;
+}
+
+#menu li:hover {
+	border-left-width: 5px;
 }
 
 #menu a {
+	color: black;
 	text-decoration: none;
 }
 
