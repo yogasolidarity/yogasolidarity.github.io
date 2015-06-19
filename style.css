@@ -86,11 +86,15 @@ h1 {
 
 #content > section {
 	border-top: 1px solid grey;
-	padding: 50px 0;
+	padding: 40px 0;
 }
 
 #content > section:first-of-type {
 	border-top: none;
+}
+
+#content > section > h2 {
+	margin-bottom: 25px;
 }
 
 #orientation {
@@ -158,6 +162,35 @@ h1 {
 
 #diaporama {
 	cursor: pointer;
+	padding-top: 10px;
+	position: relative;
+	text-align: center;
+}
+
+#diaporama > img {
+	box-shadow: 0px 1px 4px black;
+	height: auto;
+	width: 32%;
+}
+
+#diaporama > img:nth-child(1) {
+	left: 30px;
+}
+
+#diaporama > img:nth-child(2) {
+	z-index: 5;
+}
+
+#diaporama > img:nth-child(3) {
+	right: 30px;
+}
+
+#diaporama > img:nth-child(1),
+#diaporama > img:nth-child(3) {
+	bottom: 10px;
+	opacity: 0.8;
+	position: relative;
+	z-index: -1;
 }
 
 #liens {
