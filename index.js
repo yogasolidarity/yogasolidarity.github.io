@@ -2,6 +2,7 @@
 
  (function(exports) {
 
+   // diapo
    function diaporama() {
      var pswp = document.querySelector('.pswp');
      var items = [
@@ -42,11 +43,14 @@
      gallery.init();
    }
 
+   // ContentLoaded
    window.addEventListener('DOMContentLoaded', function() {
+     // bind diapo
      document.querySelector('#diaporama').addEventListener('click', function (ev) {
        diaporama();
      });
 
+     // bind click menu
      document.querySelector('#menu ul').addEventListener('click', function (ev) {
        var item = ev.target;
 
@@ -59,6 +63,7 @@
        }
      });
 
+     // init menu en fonction du hash
      if (window.location.hash) {
        [].forEach.call(document.querySelectorAll('#menu a'), function (link) {
          if (link.getAttribute('href') === window.location.hash) {
@@ -67,11 +72,13 @@
        });
      }
 
+     // init sections et scroll dans la page
      var items = [].map.call(document.querySelectorAll('#content > section'), function (item) {
        return [item, item.getBoundingClientRect()];
      });
      var baseScroll = window.scrollY;
 
+     // MAJ menu en fonction du scroll
      function updateMenu() {
        var item;
        items.forEach(function (pair) {
@@ -93,9 +100,18 @@
        }
      }
 
+     // bind scroll et MAJ menu
+     // passer en setInterval ou requestAnimationFrame si trop gourmand
      window.addEventListener('scroll', updateMenu);
     //  setInterval(updateMenu, 2000);
+    // init menu en fonction du scroll au chargement
      updateMenu();
+
+     // bind carte
+     document.querySelector('#ysmapwp').addEventListener('click', function (ev) {
+       this.innerHTML = '<p style="margin: 5px 0;">Espace associatif, 53 Impasse de l\'Odet, 29000 Quimper</p><iframe width="580" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-4.090958833694458%2C47.993838424208114%2C-4.087048172950745%2C47.99702976882174&amp;layer=mapnik&amp;marker=47.99543232628124%2C-4.089000821113586" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=47.99543&amp;mlon=-4.08900#map=18/47.99543/-4.08900">Voir carte sur OpenStreeMap</a></small>';
+       this.classList.remove('preclick');
+     });
    });
 
 })(this);﻿

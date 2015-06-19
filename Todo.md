@@ -1,6 +1,5 @@
 # TODO
 
-- mini diapos à cliquer pour activer le diapo de photos
 - insérer photos d'après les instructions
 - logo en en-tête
 - responsive design
