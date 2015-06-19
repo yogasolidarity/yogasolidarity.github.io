@@ -75,7 +75,7 @@
      function updateMenu() {
        var item;
        items.forEach(function (pair) {
-         if ((pair[1].top + baseScroll) < window.scrollY) {
+         if ((pair[1].top + baseScroll - 5) < window.scrollY) {
            item = pair[0];
          }
        });
