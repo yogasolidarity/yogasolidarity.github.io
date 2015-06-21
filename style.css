@@ -174,6 +174,11 @@ h1 {
 
 }
 
+#yoga img {
+	height: auto;
+	width: 100%;
+}
+
 #don {
 
 }
