@@ -174,13 +174,21 @@ h1 {
 
 }
 
-#yoga img {
+#yoga > img {
 	height: auto;
 	width: 100%;
 }
 
 #don {
 
+}
+
+#don > img {
+	float: right;
+	margin-left: -120px;
+	left: 150px;
+	position: relative;
+	width: 300px;
 }
 
 #adhesion {
