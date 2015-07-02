@@ -175,6 +175,14 @@ nav a {
 
 }
 
+#actions > iframe {
+	margin: 0 30px;
+}
+
+#actions > object {
+	margin: 0 20px;
+}
+
 #rdv {
 
 }
@@ -198,6 +206,10 @@ nav a {
 	left: 150px;
 	position: relative;
 	width: 300px;
+}
+
+#don > object {
+	margin: 0 20px;
 }
 
 #adhesion {
