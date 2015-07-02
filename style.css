@@ -43,12 +43,20 @@ nav a {
 }
 
 #header {
+	position: relative;;
 }
 
-h1 {
-	color: #DB921D;
+#header img {
+	height: auto;
+	left: calc(50% - 530px);
+	position: fixed;
+	top: 15px;
+	width: 200px;
+}
+
+#header h1 {
+	color: #FD913A;
 	margin: 15px 0;
-	text-align: center;
 	text-shadow: -1px 0 black, 1px 0 black, 0 -1px black, 0 1px black;
 }
 
@@ -62,6 +70,7 @@ h1 {
 	left: calc(50% - 540px);
 	position: fixed;
 	text-align: left;
+	top: 230px;
 }
 
 #menu {
@@ -71,7 +80,7 @@ h1 {
 }
 
 #menu li {
-	border-left: 3px solid orange;
+	border-left: 3px solid #FD913A;
 	margin: 5px 0px;
 	padding: 2px 5px;
 	transition: border-left 0.1s;
@@ -119,7 +128,7 @@ h1 {
 
 #orientation a {
 	background-color: lightgoldenrodyellow;
-	border: 2px solid orange;
+	border: 2px solid #FD913A;
 	color: black;
 	margin: 0 5px;
 	padding: 10px;
