@@ -49,6 +49,7 @@ nav a {
 #header img {
 	height: auto;
 	left: calc(50% - 530px);
+	left: -webkit-calc(50% - 530px);
 	position: fixed;
 	top: 15px;
 	width: 200px;
@@ -68,6 +69,7 @@ nav a {
 
 #menu {
 	left: calc(50% - 540px);
+	left: -webkit-calc(50% - 540px);
 	position: fixed;
 	text-align: left;
 	top: 230px;
@@ -175,11 +177,12 @@ nav a {
 
 }
 
-#actions > iframe {
+#actionvid {
 	margin: 0 30px;
 }
 
-#actions > object {
+#actionpdf {
+	border: 1px solid #404040;
 	margin: 0 20px;
 }
 
