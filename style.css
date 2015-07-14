@@ -126,6 +126,7 @@ nav a {
 
 #orientation p {
 	display: inline-block;
+	margin: 0;
 }
 
 #orientation a {
@@ -188,6 +189,30 @@ nav a {
 
 #rdv {
 
+}
+
+#rdv .cours {
+	clear: both;
+	margin: 20px 0;
+}
+
+#rdv .cours img {
+	display: inline;
+	float: right;
+	height: auto;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	width: 150px;
+}
+
+#rdv .cours:nth-of-type(even) img {
+	float: left;
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+#rdv .cours p {
+	/*display: inline;*/
 }
 
 #yoga {
