@@ -31,6 +31,8 @@
        { src: 'media/School prayers.jpg',                     w: 640, h: 427 },
        { src: 'media/School.jpg',                             w: 640, h: 480 },
        { src: 'media/Seva.jpg',                               w: 640, h: 480 },
+       { src: 'media/Some photos with the children.jpg',      w: 1196, h: 628 },
+       { src: 'media/Temporary shelter for boys displaced from the dormitory due to the earthquake.jpg', w: 1122, h: 632 },
        { src: 'media/The founder is involved in seva.jpg',    w: 640, h: 480 },
        { src: 'media/The founder Swami Ramchandra Das.jpg',   w: 630, h: 640 },
        { src: 'media/The school.jpg',                         w: 640, h: 480 }

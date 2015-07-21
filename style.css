@@ -12,6 +12,18 @@ body {
 	min-height: 100%;
 }
 
+h2 {
+	margin: 20px 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h4 {
+	margin: 5px 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -179,12 +191,12 @@ nav a {
 }
 
 #actionvid {
-	margin: 0 30px;
+	margin: 10px 30px;
 }
 
 #actionpdf {
 	border: 1px solid #404040;
-	margin: 0 20px;
+	margin: 10px 20px 0;
 }
 
 #rdv {
@@ -226,6 +238,10 @@ nav a {
 
 #don {
 
+}
+
+#don > p {
+	text-align: left;
 }
 
 #don > img {
@@ -287,4 +303,15 @@ nav a {
 
 #liens {
 
+}
+
+#lien-emba {
+	display: inline-block;
+	position: relative;
+}
+
+#lien-emba > img {
+	position: absolute;
+	right: 0;
+	top: 20px;
 }
