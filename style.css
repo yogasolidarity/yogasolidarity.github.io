@@ -176,6 +176,15 @@ hr {
 
 }
 
+#association img {
+	height: auto;
+	width: 20px;
+}
+
+#association img + p {
+	margin-top: 5px;
+}
+
 #ysmapwp {
 	text-align: center;
 }
